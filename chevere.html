@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Introducir texto</title>
+	<link rel="stylesheet" type="text/css" href="nom.css">
+	<style>
+		/* Reset básico para limpiar márgen por defecto */
+
+		*{
+			box-sizing: border-box;
+		}
+
+		/* Estilo general del fondo de la pagina */
+
+		body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-image: url(pixel.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+/* Encabezado */
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 40px;
+}
+@keyframes float{
+	0% {transform: translateY(0px);}
+	50% {transform: translateY(-9px);}
+	100% {transform: translateY(0px);}
+}
+.header h1{
+	color :black;
+	font-size: 70px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	animation: float 3s ease-in-out infinite;
+}
+.nube{
+	color: whitesmoke;
+	font-size: 70px;
+	animation:float 3s ease-in-out infinite ;
+}
+/* Contenedor principal */
+.contenedor-principal{
+	max-width: 1050px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 35px;/* Separación vertical entre bloques */
+
+}
+/* Filas de 3 cajas usando CSS Grid puro */ 
+.fila-tres {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 25px;
+}
+/* Estilo visual de cada caja pastel */
+
+		.caja1{
+			width: 350px;
+			height: 400px;
+			display: block;
+			background-image: url(Cruel_King_Icon.jpg);
+			background-color: whitesmoke;
+			background-repeat: no-repeat;
+			border: 3px dashed cyan;
+			border-radius: 20px;
+			text-align: center;
+			background-size: contain;
+			background-position: center bottom;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			animation: float 3s ease-in-out infinite;
+		}
+.caja2{
+			height: 400px;
+			display: block;
+			background-image: url(CruelKingTransparentGIF.gif);
+			background-color: whitesmoke;
+			background-repeat: no-repeat;
+			border: 3px dashed red;
+			border-radius: 20px;
+			text-align: center;
+			background-size: contain;
+			background-position: center bottom;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			animation: float 3s ease-in-out infinite;
+		}
+
+		.caja3{
+			height: 400px;
+			display: block;
+			background-image: url(Stylish_Achievement_Icon.gif);
+			background-color: whitesmoke;
+			background-repeat: no-repeat;
+			border: 3px dashed cyan;
+			border-radius: 20px;
+			text-align: center;
+			background-size: contain;
+			background-position: center bottom;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			animation: float 3s ease-in-out infinite;
+		}
+
+		.caja4{
+			height: 400px;
+			display: block;
+			background-image: url(Dethroned_Achievement_Icon.gif);
+			background-color: whitesmoke;
+			background-repeat: no-repeat;
+			border: 3px dashed red;
+			border-radius: 20px;
+			text-align: center;
+			background-size: contain;
+			background-position: center bottom;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			animation: float 3s ease-in-out infinite;
+		}
+
+.caja5{
+			height: 400px;
+			display: block;
+			background-image: url(Silence_by_aspriterico.gif);
+			background-color: whitesmoke;
+			background-repeat: no-repeat;
+			border: 3px dashed cyan;
+			border-radius: 20px;
+			text-align: center;
+			background-size: contain;
+			background-position: center bottom;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			animation: float 3s ease-in-out infinite;
+		}
+
+		.caja6 {
+			height: 400px;
+			display: block;
+			background-image: url(A_call_for_help.jpg);
+			background-color: whitesmoke;
+			background-repeat: no-repeat;
+			border: 3px dashed red;
+			border-radius: 20px;
+			text-align: center;
+			background-size: contain;
+			background-position: center bottom;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			animation: float 3s ease-in-out infinite;
+		}
+		.caja1:hover, .caja2:hover, .caja3:hover, .caja4:hover, .caja5:hover, .caja6:hover, .caja:hover{
+			transform: translateY(-15px);
+			box-shadow: 0 13px -25px rgba(0, 0, 0, 0.25);
+			cursor: pointer;
+		}
+
+		.caja h2{
+			color:lightblue;
+			font-size: 25px;
+			margin-top: 10px;
+			margin-bottom: 15px;
+		}
+		.caja p{
+			font-size: 20px;
+			line-height: 1,5;
+			color: darkblue;
+			font-weight: bold;
+			text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+		}
+
+		/* Fila de la caja única del final */
+		.fila-unica{
+			display: flex;
+			justify-content: center;
+		}
+		.caja-destacada{
+			width: 900px;
+			height: 400px;
+			background-color: whitesmoke;
+			border-radius: 8px;
+			border: 3px dashed blue;
+			box-shadow: 0 4px 8px;
+			padding: 20px;
+			margin: 20px auto 4px auto;
+			text-align: center;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+		/* Adaptación para pantalla de celular */
+		@media (max-width: 768px){
+			.fila-tres{
+				grid-template-columns: 1fr; /* Pasa de 3 columnas a 1 sola en moviles */
+			}
+		}
+
+
+	</style>
+		
+</head>
+<body>
+	<audio src="Cruel-King.mp3" controls></audio>
+	<header class="header">
+		<span class="nube">❄</span>
+		<h1><img src="CruelKing_Title.jpg"> </h1>
+		<span class="nube">❄</span>
+	</header>
+
+<main class="contenedor-principal">
+	
+	<section class="fila-tres">
+		<div class="caja1">
+			<h2>perfin del personaje</h2>
+		</div>
+
+		<div class="caja2">
+			<h2>animación de pelea</h2>
+		</div>
+
+		<div class="caja3">
+			<h2>emblema: full rojo</h2>
+		</div>
+	</section>
+
+	<section class="fila-tres">
+		<div class="caja4">
+			<h2>¡capitulo 1 completado!</h2>
+		</div>
+
+		<div class="caja5">
+			<h2>chat de Cruel</h2>
+		</div>
+
+		<div class="caja6">
+			<h2>Carta de ayuda</h2>
+		</div>
+	</section>
+
+	<section class="fila-unica">
+	 <div class="caja caja-descatacada">
+	 	<h2>Descripción </h2>
+	 	<p>En el juego, Cruel King fue designado guardián de la Daga de Hielo , que anteriormente se encontraba en el Castillo de Roca Negra bajo el dominio del Rey Roca Negra, el monarca anterior antes de ser derrocado por Cruel King y la Trinidad, y que poseyó hasta que el jugador lo derrotó. Tras el Capítulo 1, se puede volver a enfrentar a él en Nirvana Frío junto con el Rey Roca Negra en la Sala del Trono, y el jugador puede obtener una carta de aliado suya tras derrotar a su versión mejorada en su sala del trono.</p>
+</div>
+	 </section>
+</main>
+</body>
+</html>
